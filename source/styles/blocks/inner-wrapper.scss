@@ -1,0 +1,9 @@
+.inner-wrapper {
+  @media (min-width: $tablet) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 68px;
+  }
+}

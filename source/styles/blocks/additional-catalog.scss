@@ -1,0 +1,152 @@
+.additional-catalog {
+  margin-bottom: 40px;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-bottom: 95px;
+  }
+}
+
+.additional-catalog::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  left: 0;
+  top: 17px;
+}
+
+.additional-catalog__title {
+  margin: 0;
+  padding: 0 40px 0 20px;
+  margin-bottom: 34px;
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $primary-dark-color;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: calc(50% - 650px);
+    padding: 0 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-catalog__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.additional-catalog__list {
+  margin: 0 auto;
+  max-width: 708px;
+  margin-bottom: 34px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 896px;
+    margin: 0;
+  }
+}
+
+.additional-catalog__description {
+  position: relative;
+  margin: 0;
+  display: block;
+  padding: 187px 55px 43px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-light-color;
+  text-align: center;
+  background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#icon-gift") no-repeat center 59px;
+  background-size: 78px 80px;
+
+  @media (min-width: $tablet) {
+    padding: 71px 125px 69px 422px;
+    text-align: left;
+    background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#icon-gift") no-repeat calc(50% - 236px) 57px;
+    background-size: 80px 82px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 183px 40px 43px;
+    text-align: center;
+    background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#icon-gift") no-repeat center 56px;
+    background-size: 78px 80px;
+  }
+}
+
+.additional-catalog__description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 290px;
+  background: #c0b4b4 image-set(url("../../images/catalog-background-mobile@1x.webp"), url("../../images/catalog-background-mobile@1x.jpeg")) 50% 50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(url("../../images/catalog-background-mobile@2x.webp"), url("../../images/catalog-background-mobile@2x.jpeg"));
+  }
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    height: 200px;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-tablet@1x.webp"), url("../../images/catalog-background-tablet@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-tablet@2x.webp"), url("../../images/catalog-background-tablet@2x.jpeg"));
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    height: 288px;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-desktop@1x.webp"), url("../../images/catalog-background-desktop@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-desktop@2x.webp"), url("../../images/catalog-background-desktop@2x.jpeg"));
+    }
+  }
+}
+
+.additional-catalog__description-wrapper {
+  display: block;
+  width: 165px;
+  margin: 0 auto;
+}
