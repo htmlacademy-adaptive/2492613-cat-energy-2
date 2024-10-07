@@ -1,15 +1,149 @@
-.footer {}
+.footer {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    position: relative;
+    background-color: #f2f2f2;
+  }
+}
 
-.footer__address {}
+.footer__address {
+  @media (min-width: $desktop) {
+    position: relative;
+    padding: 94px 0 106px;
+  }
+}
 
-.footer__box {}
+.footer__box {
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-.footer__map {}
+  @media (min-width: $tablet) {
+    padding: 60px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 308px;
+  }
 
-.footer__links {}
+  @media (min-width: $desktop) {
+    position: relative;
+    background-color: #ffffff;
+    padding: 62px 78px 58px 80px;
+    gap: 92px;
+    width: 565px;
+    box-sizing: border-box;
+    left: calc(50% - 610px);
+    z-index: 5;
+  }
+}
 
-.footer__links-logo {}
+.footer__map {
+  width: 100%;
+}
+
+.footer__links {
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 20px 21px;
+  display: grid;
+  grid-template-rows: 62px 62px 73px;
+  grid-template-columns: 1fr;
+  place-items: center center;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    background-color: #f2f2f2;
+    padding: 55px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    padding: 66px 110px;
+  }
+}
+
+.footer__links-logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#logo-name");
+  background-color: #111111;
+
+  @media (min-width: $tablet) {
+    height: 35px;
+    margin-right: 36px;
+  }
+}
+
+.footer__links-logo:hover {
+  background-color: #3e3e3e;
+}
+
+.footer__links-logo:focus {
+  background-color: #3e3e3e;
+}
+
+.footer__links-logo:active {
+  background-color: #6b6b6b;
+}
 
 .footer__social {}
 
-.footer__academy-link {}
+.footer__academy-link {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-color;
+  text-decoration: none;
+  position: relative;
+  justify-self: start;
+
+  @media (min-width: $tablet) {
+    padding-right: 50px;
+  }
+}
+
+.footer__academy-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  background-color: #666666;
+  top: -7px;
+  right: -167px;
+
+  @media (min-width: $tablet) {
+    top: -7px;
+    right: 0;
+  }
+}
+
+.footer__academy-link:hover::after {
+  background-color: #68b738;
+}
+
+.footer__academy-link:focus {
+  outline: none;
+}
+
+.footer__academy-link:focus::after {
+  background-color: #68b738;
+}
+
+.footer__academy-link:active {
+  opacity: 0.3;
+  color: #444444;
+}
+
+.footer__academy-link:active::after {
+  background-color: #68b738;
+}
+
+.footer__academy-link:visited {
+  color: $secondary-color;
+}

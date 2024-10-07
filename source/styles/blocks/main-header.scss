@@ -1,6 +1,49 @@
-.main-header {}
+.main-header {
+  width: 100%;
+  padding-top: 65px;
+  background: url("../../icons/stack.svg#logo-name") no-repeat center 22px;
+  background-size: 100% 19px;
 
-.main-header__logo {}
+  @media (min-width: $tablet) {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 34px 0 30px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+
+  @media (min-width: $tablet) {
+    position: unset;
+    margin: 0;
+    margin-right: 30px;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
 
 .main-header__logo-image {}
 
