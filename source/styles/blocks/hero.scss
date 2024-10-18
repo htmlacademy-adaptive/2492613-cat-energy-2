@@ -14,7 +14,7 @@
   @media (min-width: $desktop) {
     content: "";
     height: 694px;
-    width: 720px;
+    width: 50%;
     background-color: rgba(104, 183, 56, 0.85);
     position: absolute;
     left: 50%;
@@ -29,15 +29,17 @@
     display: block;
     position: absolute;
     height: 694px;
-    width: 720px;
+    width: 50%;
     background: image-set(url("../../images/index-background-desktop@1x.webp"), url("../../images/index-background-desktop@1x.jpeg")) no-repeat 0 0;
-    background-size: cover;
+    background-size: auto;
     top: 0;
     left: 50%;
     z-index: -10;
 
     @media (min-resolution: 2dppx) {
-      background-image: image-set(url("../../images/index-background-desktop@2x.webp"), url("../../images/index-background-desktop@2x.jpeg"));
+      background-image: image-set("../../images/index-background-desktop@2x.webp" 2x, "../../images/index-background-desktop@2x.jpeg" 2x);
+      height: 694px;
+      width: 50%;
     }
   }
 }
