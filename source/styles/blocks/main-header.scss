@@ -1,8 +1,6 @@
 .main-header {
   width: 100%;
   padding-top: 65px;
-  background: url("../../icons/stack.svg#logo-name") no-repeat center 22px;
-  background-size: 100% 19px;
 
   @media (min-width: $tablet) {
     background: none;
@@ -42,5 +40,30 @@
 }
 
 .main-header__logo:active {
+  opacity: 0.6;
+}
+
+.main-header__logo-name {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 50vw;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-header__logo-name:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-name:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
+.main-header__logo-name:active {
   opacity: 0.6;
 }

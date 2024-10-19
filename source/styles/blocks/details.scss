@@ -75,21 +75,79 @@
 
 .details__item--use::before {
   background-image: url("../../icons/stack.svg#details-1");
+
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/stack.svg#details-1-tablet");
+  }
 }
 
 .details__item--compound::before {
   background-image: url("../../icons/stack.svg#details-2");
+
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/stack.svg#details-2-tablet");
+  }
 }
 
 .details__item--eat::before {
   background-image: url("../../icons/stack.svg#details-3");
+
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/stack.svg#details-3-tablet");
+  }
 }
 
 .details__item--change::before {
   background-image: url("../../icons/stack.svg#details-4");
+
+  @media (min-width: $tablet) {
+    background-image: url("../../icons/stack.svg#details-4-tablet");
+  }
 }
 
-.details-item__description {
+.details__item::after {
+  @media (min-width: $tablet) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    display: inline-block;
+    width: 136px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: -5;
+  }
+}
+
+.details__item--use::after {
+  @media (min-width: $tablet) {
+    content: "1";
+    right: -7px;
+  }
+}
+
+.details__item--compound::after {
+  @media (min-width: $tablet) {
+    content: "2";
+  }
+}
+
+.details__item--eat::after {
+  @media (min-width: $tablet) {
+    content: "3";
+  }
+}
+
+.details__item--change::after {
+  @media (min-width: $tablet) {
+    content: "4";
+    right: -4px;
+  }
+}
+
+.details__item-description {
   margin: 0;
   display: block;
   min-height: 60px;

@@ -18,7 +18,11 @@
 
 .main-nav--opened .main-nav__toggle {
   display: block;
+  width: 18px;
+  height: 18px;
   background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
+  top: 22px;
+  right: 20px;
 
   @media (min-width: $tablet) {
     display: none;
