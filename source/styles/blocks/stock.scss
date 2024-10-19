@@ -101,7 +101,7 @@
   }
 }
 
-.stock-form {
+.stock__form {
   padding: 0 20px;
 
   @media (min-width: $tablet) {
@@ -115,7 +115,7 @@
   }
 }
 
-.stock-field {
+.stock__field {
   margin: 0;
   margin-bottom: 16px;
   padding: 12px;
@@ -134,19 +134,19 @@
   }
 }
 
-.stock-field:hover {
+.stock__field:hover {
   border: 1px solid #cdcdcd;
 }
 
-.stock-field:focus {
+.stock__field:focus {
   outline: 1px solid #444444;
 }
 
-.stock-field:invalid {
+.stock__field:invalid {
   outline: 1px solid #ff8282;
 }
 
-.stock-button {
+.stock__button {
   width: 100%;
   min-height: 56px;
   font-size: 20px;
